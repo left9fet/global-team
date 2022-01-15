@@ -1489,3 +1489,40 @@
     margin-top: auto;
 }
 
+
+// CHANGE ========================
+
+.change {
+    color: #ffffff;
+    padding: 170px 0 190px;
+    background-image: url(../images/change/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    @media screen and (max-width: 1200px) {
+        padding: 100px 0 120px;
+    }
+    @media screen and (max-width: 900px) {
+        padding: 60px 0;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 40px 0;
+    }
+}
+
+.change__title {
+    max-width: 670px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.change__btn {
+    background: linear-gradient(95.03deg, #F09642 0%, #F0DF42 145.26%);
+    border: none;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
