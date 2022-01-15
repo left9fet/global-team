@@ -1219,3 +1219,63 @@
     margin: 0 auto;
 }
 
+
+
+// IMPROVE ========================
+
+.improve {
+    background-image: url(../images/improve/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    min-height: 720px;
+    padding-top: 160px;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 1200px) {
+        min-height: 400px;
+        padding-top: 70px;
+        background-position: right;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/improve/decor.svg);
+        width: 852px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 766px;
+        background-size: contain;
+        top: -130px;
+        left: 0;
+        z-index: -1;
+        @media screen and (max-width: 1200px) {
+            width: 482px;
+            height: 466px;
+        }
+        @media screen and (max-width: 550px) {
+            width: 300px;
+            top: -30px;
+            left: -40px;
+        }
+    }
+}
+
+.improve__title {
+    max-width: 590px;
+    margin-bottom: 35px;
+}
+
+.improve__btn {
+    position: relative;
+    background-color: #4B43B3;
+    border: none;
+    color: #ffffff;
+    border-radius: 40px;
+    min-width: 280px;
+
+    &:hover {
+        background-color: darken(#4B43B3, 10);
+    }
+}
+
