@@ -1279,3 +1279,213 @@
     }
 }
 
+
+
+// PREFERENCES ========================
+
+.preferences {
+    padding: 260px 0;
+    position: relative;
+    overflow-x: hidden;
+
+    @media screen and (max-width: 1370px) {
+        padding: 120px 0;
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 40px 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/preferences/bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        bottom: 0;
+        left: 0;
+        width: 1920px;
+        height: 1322px;
+        z-index: -1;
+    }
+}
+.preferences__title {
+    margin-bottom: 100px;
+    text-align: center;
+    @media screen and (max-width: 800px) {
+        margin-bottom: 30px;
+    }
+}
+.preferences__inner {
+    display: flex;
+    padding-bottom: 256px;
+    @media screen and (max-width: 1600px) {
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 1450px) {
+        padding-bottom: 140px;
+    }
+    @media screen and (max-width: 900px) {
+        padding-bottom: 40px;
+    }
+}
+.preferences__imgbox {
+    margin-right: 150px;
+    flex: 0 0 660px;
+    @media screen and (max-width: 1600px) {
+        margin-top: 40px;
+        order: 1;
+        flex: 0 1 auto;
+        margin-right: 0;
+    }
+}
+.preferences__img {
+}
+.preferences__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 630px) {
+        flex-wrap: nowrap;
+        margin: 0;
+        overflow-x: scroll;
+    }
+   
+}
+
+.references__item-wrap {
+    flex: 0 0 auto;
+}
+.preferences__item {
+    margin: 24px 16px;
+    width: 360px;
+    box-shadow: 10px 4px 30px rgba(172, 172, 172, 0.25);
+    border-radius: 20px;
+    padding: 32px;
+    background-color: #fff;
+    transition: 0.3s;
+
+    @media screen and (max-width: 825px) {
+        padding: 23px 16px;
+        width: 250px;
+    }
+
+    @media screen and (max-width: 630px) {
+        margin: 23px 5px;
+    }
+
+    &:hover {
+        box-shadow: 10px 4px 30px rgba(172, 172, 172, 0.65);
+    }
+}
+.preferences__item-imgbox {
+    padding-bottom: 17px;
+    margin-bottom: 16px;
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        width: 96px;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #4497B6;
+    }
+}
+.preferences__item-img {
+    object-fit: cover;
+}
+.preferences__item-text {
+    font-weight: 500;
+}
+.preferences__box {
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.preferences__body {
+    flex: 0 1 480px;
+    margin-right: 30px;
+
+    @media screen and (max-width: 1370px) {
+        flex: 0 1 auto;
+        margin-bottom: 40px;
+    }
+}
+.preferences__body-title {
+    margin-bottom: 65px;
+
+    @media screen and (max-width: 1370px) {
+        margin-bottom: 25px;
+    }
+}
+.preferences__body-text {
+    margin-bottom: 32px;
+}
+.preferences__body-premium {
+    font-weight: 700;
+    padding-left: 30px;
+    max-width: 130px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-image: url(../images/decor/plus.svg);
+        transform: rotate(50deg);
+    }
+}
+.preferences__privileges {
+    flex: 0 1 830px;
+    @media screen and (max-width: 1370px) {
+        flex: 0 1 auto;
+    }
+}
+.preferences__privileges-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 65px;
+}
+.preferences__privileges-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    @media screen and (max-width: 600px) {
+    }
+}
+.preferences__privileges-item {
+    padding: 10px;
+    margin: 0 10px;
+    width: 250px;
+    margin-bottom: 65px;
+    transition: 0.3s;
+
+    @media screen and (max-width: 600px) {
+        width: 140px;
+        margin: 0;
+    }
+    
+    &:hover {
+        background-color: darken(#7185da, 5);
+    }
+
+}
+.preferences__privileges-imgbox {
+    margin-bottom: 17px;
+    width: 120px;
+    height: 70px;
+}
+.preferences__privileges-text {
+    margin-top: auto;
+}
+
