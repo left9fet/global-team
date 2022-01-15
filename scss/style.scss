@@ -1003,3 +1003,219 @@
     margin: 0 auto;
 }
 
+
+// EXPECT ========================
+
+
+.expect {
+    padding-bottom: 140px;
+    @media screen and (max-width: 1100px) {
+        padding-bottom: 80px;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding-bottom: 10px;
+    }
+}
+
+.expect__title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.expect__items {
+    counter-reset: num;
+}
+
+.expect__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    @media screen and (max-width: 1100px) {
+        display: block;
+    }
+}
+
+.expect__item--reverse {
+    flex-direction: row-reverse;
+
+    .expect__item-body {
+        margin: 0 0 0 100px;
+        padding: 0 180px 0 0;
+        @media screen and (max-width: 1100px) {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    .expect__item-body::before {
+        left: auto;
+        right: 0;
+    }
+}
+
+.expect__item-body {
+    flex: 0 1 755px;
+    margin-right: 100px;
+    position: relative;
+
+    @media screen and (max-width: 1100px) {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+.expect__item-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-left: 185px;
+
+    @media screen and (max-width: 550px) {
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 5px;
+        padding-left: 130px;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 1;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        top: -20px;
+        left: 0;
+        counter-increment: num;
+        content: "0" counter(num);
+
+        @media screen and (max-width: 550px) {
+            font-size: 80px;
+        }
+    }
+    
+}
+
+.expect__item-subtitle {
+    padding-left: 185px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 65px;
+
+    @media screen and (max-width: 1100px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 550px) {
+        font-size: 14px;
+        line-height: 19px;
+        padding-left: 130px;
+    }
+}
+
+.expect__item-listtitle {
+    margin-bottom: 15px;
+}
+
+.expect__item-list {
+    margin-bottom: 15px;
+}
+
+.expect__item-imgbox {
+    position: relative;
+}
+
+.expect__item-imgbox-text {
+    position: absolute;
+    bottom: 130px;
+    left: 270px;
+    max-width: 325px;
+    padding-left: 30px;
+    color: #ffffff;
+    span {
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 1600px) {
+        display: none;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/decor/star.svg);
+        background-repeat: no-repeat;
+        width: 19px;
+        height: 17px;
+        left: 0;
+        top: 0;
+    }
+}
+
+.expect__item-listitem + .expect__item-listitem {
+    margin-top: 15px;
+}
+
+.expect__item-text p + p {
+    margin: 25px 0 30px;
+
+}
+
+.expect__item-cards {
+    display: flex;
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+    }
+}
+
+.expect__item-card {
+    width: 176px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 10px 4px 30px rgba(172, 172, 172, 0.25);
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: 0.3s;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover {
+        box-shadow: 10px 4px 35px darken(rgba(172, 172, 172, 0.25), 35);
+    }
+}
+
+.expect__item-card + .expect__item-card {
+    margin-left: 15px;
+    @media screen and (max-width: 500px) {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.expect__item-cardimgbox {
+    margin-bottom: 8px;
+    @media screen and (max-width: 500px) {
+        margin-bottom: 0;
+        margin-right: auto;
+    }
+
+}
+
+.expect__item-cardimg {
+    margin: 0 auto;
+}
+
